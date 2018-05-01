@@ -3,15 +3,15 @@ package keywords;
 import org.openqa.selenium.WebDriver;
 
 import scripts.RunnerTest;
-import utils.ReadKeywords;
+import utils.ReadKeywordsTest;
 
-public class ExecuteKeywords extends Keywords {
+public class ExecuteKeywordsTest extends KeywordsTest {
 	public void keyword_executor() throws Exception {
 		
 		WebDriver driver=RunnerTest.getDriver();
 
 		String keyword, locator, text, attribute;
-		ReadKeywords rk = new ReadKeywords();
+		ReadKeywordsTest rk = new ReadKeywordsTest();
 		String data[][] = rk.readKeywords("testdata/TestData.xls");
 		
 

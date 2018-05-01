@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 
-import keywords.ExecuteKeywords;
+import keywords.ExecuteKeywordsTest;
 
 public class RunnerTest {
 	static WebDriver driver;
@@ -16,7 +16,7 @@ public class RunnerTest {
 	
 	@Test
 	public void testThis() throws Exception {
-		ExecuteKeywords exec = new ExecuteKeywords();
+		ExecuteKeywordsTest exec = new ExecuteKeywordsTest();
 		System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe");
 		driver = new ChromeDriver();
 		exec.keyword_executor();

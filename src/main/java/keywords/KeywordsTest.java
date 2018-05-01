@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
 
 
-public class Keywords {
+public class KeywordsTest {
 
 	public void navigate_to(WebDriver driver, String text) {
 		driver.navigate().to(text);
